@@ -1,0 +1,87 @@
+.home
+	text-align center
+	width 100%
+	color #fff
+	letter-spacing 1px
+	&__banner
+		width 100%
+		height 75vh
+		background url(../images/fashion_films.jpg) center no-repeat
+		background-size cover
+	&__description
+		padding-top 140px
+		h1
+			font 700 3.5rem Futura
+			line-height 4.13rem
+		p, span
+			font-weight 700
+		p
+			font-size 2.25rem
+		span
+			font-size 1.4rem
+	&__date
+		margin-top 18px
+	&__studio
+		line-height 0.2
+	&__sponsor
+		width 100%
+		height 25vh
+		background url(../images/partner_banner.jpg) no-repeat
+		background-size cover
+	&__partners
+		display flex
+		justify-content center
+		margin-top 40px
+	&__filmgroup
+		margin-right 80px
+	&__ufw,
+	&__filmgroup
+		svg
+			width 110px
+			height 70px
+	.home__button
+		display none
+
+@media screen and (max-width: 992px)
+	.home
+		&__description
+			padding-top 180px
+		&__banner
+			height 100vh
+
+@media screen and (max-width: 480px)
+	.home
+		&__description
+			padding-top 140px
+		h1
+			font-size 2.5rem
+			line-height 2.8rem
+		&__partners
+			margin-top 30px
+		&__sponsor
+			height 110px
+			background-size contain
+		.home__button
+			display inline-block
+			margin-top 30px
+			
+@media screen and (max-width: 375px)
+	.home
+		&__description
+			padding-top 140px
+		h1
+			font-size 1.75rem
+			line-height 36px
+		p
+			font-size 1.7rem
+		span
+			font-size 0.8rem
+		&__partners
+			margin-top 35px
+		&__filmgroup
+			margin-right 40px
+		&__ufw,
+		&__filmgroup
+			svg
+				width 75px
+				height 55px

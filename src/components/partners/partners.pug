@@ -1,0 +1,42 @@
+mixin li(link,path)
+	li.partners__item
+		a(href=link)
+			img(src=path)
+
+
+section.partners#partners
+	.container
+		.row
+			.col-12
+				h3 ОРГАНІЗАТОРИ ТА ПАРТНЕРИ
+		.row
+			.col-12
+				.partners__wrap.d-flex.flex-column.flex-lg-row
+					.partners__org.d-flex.flex-row.flex-lg-column.justify-content-around.align-items-lg-center
+						.partners__filmgroup
+							a(href='http://fffkyiv.com/#')
+								svg(role='img')
+									use(xlink:href='svg-symbols.svg#fu')
+						.partners__ufw
+							a(href='http://fffkyiv.com/#')
+								svg(role='img')
+									use(xlink:href='svg-symbols.svg#ufw')
+					.partners__brands
+						ul.partners__list.d-flex.flex-wrap.justify-content-center.align-items-center
+							+li('http://fffkyiv.com/#','images/partners/logo_alekseev_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_dhl_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_cava.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_bmw_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_fondy.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_fashionweek_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_lorashen_light.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_zefir_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_elle01_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_jetsetter_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_tochka_new.png')
+							+li('http://fffkyiv.com/#','images/partners/logo_regenthill.png')
+
+
+
+
+

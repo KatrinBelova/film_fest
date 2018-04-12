@@ -1,0 +1,38 @@
+section.header
+	.container
+		.row.justify-content-start.justify-content-md-center.align-items-center.flex-md-nowrap
+			.col-12.col-md-10.order-3.order-md-1
+				nav.header__nav
+					ul.header__list.d-flex.align-items-end.justify-content-md-between.align-items-md-center.flex-column.flex-md-row
+						li.header__item.header__logo.hidden
+								svg(role='img')
+									use(xlink:href='svg-symbols.svg#logo')
+						li.header__item
+							a.header__link(href='#about') Про фестиваль
+						li.header__item
+							a.header__link(href='#news') Новини
+						li.header__item
+							a.header__link(href='#program') Програма
+						li.header__item
+							a.header__link(href='#nominees') Номінанти
+						li.header__item
+							a.header__link(href='#jury') Журі
+						li.header__item
+							a.header__link(href='#contacts') Контакти
+						li.header__item
+							a.header__link.header__button.button(href='http://fffkyiv.com/#') Купити квиток
+			.col-auto.order-2
+				.header__lang.visible
+					a.header__ua.active(href='#') ua 
+					span #[  / ]
+					a.header__en(href='#') en
+			.col-5.col-md-auto.order-1.order-md-3
+				.header__socials.d-flex.justify-content-start
+					a.header__facebook(href='https://www.facebook.com/fffkyiv/' target="_blank")
+						i.icon-facebook-circle
+					a.header__instagram(href='https://www.instagram.com/fffkyiv/' target="_blank")
+						i.icon-instagram-circle
+	.header__exit
+		i.icon-close
+.header__menu
+	i.icon-menu
