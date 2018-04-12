@@ -8,7 +8,9 @@ html
 		//- 	var FontAwesomeConfig = {
 		//- 		searchPseudoElements: true
 		//- 	};
+		script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAukZ1kHxbl14Kf0I0HhIuu-Ym-703pmJs&callback=initMap')
 		script(defer src='./js/bundle.js')
+		
 		//- script(defer src='./fonts/fontawesome-all.js')
 		title Fashion Film Festival Kyiv
 		meta(content='' name='description')
@@ -17,3 +19,7 @@ html
 	body.page
 		include components/header/header
 		include components/home/home
+		include components/about/about
+		include components/jury/jury
+		include components/partners/partners
+		include components/contacts/contacts

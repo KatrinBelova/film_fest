@@ -43,6 +43,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "fontawesome-markers": "^4.6.1",
     "jquery": "^3.3.1"
   }
 }
