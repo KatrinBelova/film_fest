@@ -25,7 +25,6 @@ window.initMap = function() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: location,
         map: map,
         icon: {
             path: fontawesome.markers.MAP_MARKET_ALT,
@@ -36,7 +35,8 @@ window.initMap = function() {
             fillColor: '#c81100',
             fillOpacity: 1
         },
-        clickable: false
+        clickable: false,
+        position: new google.maps.LatLng(50.505799, 30.618057)
     });
 
 };
