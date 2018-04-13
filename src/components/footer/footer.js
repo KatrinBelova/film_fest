@@ -9,6 +9,6 @@ $(window).scroll(function(){
 	let winScrollTop = $(this).scrollTop();
 	if(winScrollTop > scrollToElem && windowWidth > 480) {
 		target.empty();
-		target.append('<img class="footer__gif" src="./images/oxwel_firework.gif">')
+		target.append('<img class="footer__gif" src="./images/oxwel_firework.gif" alt="Oxwel logo">')
 	}
 });
