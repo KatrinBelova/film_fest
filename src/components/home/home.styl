@@ -26,7 +26,7 @@
 	&__sponsor
 		width 100%
 		height 25vh
-		background url(../images/partner_banner.jpg) no-repeat
+		background url(../images/partner_banner.jpg) center no-repeat
 		background-size cover
 	&__partners
 		display flex
@@ -48,6 +48,21 @@
 			padding-top 180px
 		&__banner
 			height 100vh
+		&__sponsor
+			height 20vh
+			// background-size contain
+
+@media screen and (max-width: 768px)
+	.home
+		&__sponsor
+			height 15vh
+			background-position left
+			
+@media screen and (max-width: 560px)
+	.home
+		&__sponsor
+			height 12vh
+			// background-size contain
 
 @media screen and (max-width: 480px)
 	.home
@@ -59,8 +74,8 @@
 		&__partners
 			margin-top 30px
 		&__sponsor
-			height 110px
-			background-size contain
+			height 9vh
+			// background-size contain
 		.home__button
 			display inline-block
 			margin-top 30px

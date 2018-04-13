@@ -1,14 +1,13 @@
 {
   "name": "start-site",
   "version": "0.1.0",
-  "author": "Artem Verbat",
-  "homepage": "https://github.com/verbart/start-site#readme",
+  "homepage": "https://github.com/KatrinBelova/film_fest#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/verbart/start-site.git"
+    "url": "git+https://github.com/KatrinBelova/film_fest.git"
   },
   "bugs": {
-    "url": "https://github.com/verbart/start-site/issues"
+    "url": "https://github.com/KatrinBelova/film_fest/issues"
   },
   "scripts": {
     "start": "gulp",
@@ -43,7 +42,6 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
-    "fontawesome-markers": "^4.6.1",
     "jquery": "^3.3.1"
   }
 }
