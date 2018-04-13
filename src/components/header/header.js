@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
 $(document).ready(function() {
+
 	//Clickble NAV
 	$('a[href*="#"]').on('click', function (e) {
 	e.preventDefault();
@@ -15,30 +16,33 @@ $(document).ready(function() {
 	//Hamburger menu
 
 	$('.header__menu').on('click', function() {
+
 		$(this).css('color','#000')
 		$('.header').css({'display': 'block', 'position': 'fixed', 'z-index': '99'}).addClass('.responsive_menu')
 		$('.header').animate({left: '0'})
 	});
 	$('.header__exit').on('click', function() {
+
 		$('.header__menu').css('color','#fff')
-		$('.header').css('display','none')
 		$('.header').animate({left: '100%'})
+		// $('.header').css('display','none')
+
 	});
 	$('.header__item a').on('click', function() {
-		if($('.header').hasClass('.responsive_menu')){
-			$('.header__menu').css('color','#fff')
-			$('.header').css('display','none')
-			$('.header').animate({left: '100%'})
-		}
-		
-	});
 
-	
+		if($('.header').hasClass('.responsive_menu')){
+
+			$('.header__menu').css('color','#fff')
+			$('.header').animate({left: '100%'})
+			$('.header').css('display','none')
+		}	
+	});
 });
+
+//Animate Nav after Scroll
 
 let controlPoint = $('.home__sponsor');
 let pointPosition = controlPoint.offset().top;
-
 
 $(window).scroll(function(){
 
