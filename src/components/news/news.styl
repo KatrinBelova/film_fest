@@ -1,0 +1,84 @@
+.news
+	color #fff
+	margin-top 180px
+	&__caption
+		display none
+	&__list
+		display flex
+		justify-content space-between
+		// display block
+	// &__item
+	// 	padding-left 10px
+	// 	padding-right 10px
+	&__wrap
+		max-width 255px
+		background-color #1e1e1e
+	&__header
+		display block
+		min-height 140px
+		padding 20px 35px 0 15px
+		background-color red
+	&__date
+		font 400 1.125rem ptSans
+	&__title
+		font 700 1rem ptSans
+		line-height 1.5rem
+	&__description
+		min-height 185px
+		padding 20px 35px 0 15px
+		font 400 0.875rem Lato
+		line-height 1.5rem
+	&__button.button
+		display none
+		
+@media screen and (max-width: 1200px)
+	.news
+		&__wrap
+			max-width 220px
+		&__date
+			font-size 1rem
+		&__title
+			font-size 0.9rem
+			line-height 1.3rem
+		&__description
+			padding-top 15px
+			font-size 0.85rem
+			line-height 1.3rem
+		
+@media screen and (max-width: 992px)
+	.news
+		margin-top 50px
+		&__wrap
+			max-width 300px
+		&__caption
+			display block
+		&__list
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			margin-top 10px
+		&__item
+			display none
+			margin-top 20px
+		&__date
+			font 400 1.25rem ptSans
+		&__title
+			font 700 1.1rem ptSans
+			line-height 1.6rem
+			margin 0
+			margin-top 3px
+		&__description
+			min-height 170px
+			padding 20px 35px 0 15px
+			font 400 1rem Lato
+			line-height 1.5rem
+		&__button.button
+			margin auto
+			margin-top 20px
+			
+@media screen and (max-width: 768px)
+	.news
+		&__header
+			min-height 106px
+		&__list
+			justify-content space-around

@@ -9,8 +9,9 @@ $(document).ready(function() {
 	let position = $($(this).attr('href')).offset().top-90;
 
 	$('html, body').animate({
+
 		scrollTop: position
-	}, 1500);
+		}, 1500);
 	});
 
 	//Hamburger menu
