@@ -1,6 +1,6 @@
 # Boilerplate for quick start site building
 
----### Contains
+### Contains
 
 - **Tools**
   - `gulp-bro + babelify` - for build scripts
