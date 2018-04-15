@@ -28,7 +28,7 @@
 		padding 20px 35px 0 15px
 		font 400 0.875rem Lato
 		line-height 1.5rem
-	&__button.button
+	&__button
 		display none
 		
 @media screen and (max-width: 1200px)
@@ -58,8 +58,10 @@
 			justify-content space-between
 			margin-top 10px
 		&__item
-			display none
 			margin-top 20px
+
+			&:not(:nth-child(-n+3))
+				display none
 		&__date
 			font 400 1.25rem ptSans
 		&__title
@@ -72,7 +74,7 @@
 			padding 20px 35px 0 15px
 			font 400 1rem Lato
 			line-height 1.5rem
-		&__button.button
+		&__button
 			margin auto
 			margin-top 20px
 			
