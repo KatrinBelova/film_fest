@@ -6,28 +6,23 @@
 		height 50px
 		margin-top 55px
 	&__table
-		display table
+		display flex
+		justify-content space-between
 		margin-top 60px
-	&__row
-		display table-row
-	&__timetable,
-	&__location
-		display table-cell
+	&__location_pavilion
+		.program__time
+			padding-right 126px
 	&__location_cinema,
 	&__location_openair
-		padding-left 40px
 		.program__time
-			opacity 0
-	&__location
-		p
-			padding-left 70px
-	.program__header.program__header_pavilion
+			display none
+	&__header
+		min-height 50px
+	&__header.program__header_pavilion
 		padding-left 200px
-	// p.program__head
-	// 	opacity 0
 	&__event
-		padding-top 20px
-		padding-bottom 20px
+		height 90px
+		vertical-align center
 	p
 		font 700 1.25rem ptSans
 		color red
@@ -43,16 +38,29 @@
 		font 400 1.125rem ptSans
 		line-height 1.75rem
 		color textColor
-		max-width 230px
-	&__location
-		.program__time
-			// display none
-	&__location_pavilion
-		.program__time
-			padding-right 125px
-		
+		max-width 240px
+		&:hover
+			font-weight 600
+
+			
+@media screen and (max-width: 992px)
+	.program
+		&__table
+			flex-direction column
+		&__location_cinema,
+		&__location_openair,
+		&__location_pavilion
+			.program__time
+				display block
+				padding-right 22px
+		&__header,
+		&__header.program__header_pavilion
+			padding 0
+			text-align center
+
 @media screen and (max-width: 480px)
 	.program
+		padding-left 20px
 		&__button
 			margin-top 35px
 
