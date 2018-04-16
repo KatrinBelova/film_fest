@@ -6,10 +6,6 @@ let allEvents = $('.program__event');
 
 $(window).resize(function() {
 
-	// let links = $('.program__title');
-	// let linksArray = $.makeArray(links);
-	// let allEvents = $('.program__event');
-
 	if ($(window).width() < 992) {
 
 		for(let i = 0; i < (linksArray.length); i++){
@@ -25,24 +21,20 @@ $(window).resize(function() {
 	} else {
 		$(allEvents).fadeIn();
 	}
-
 });
 
-
-
 if ($(window).width() < 992) {
-	
 
-		for(let i = 0; i < (linksArray.length); i++){
+	for(let i = 0; i < (linksArray.length); i++){
 
-			let link = linksArray[i];
-			let isLinkEmpty = $(link).text().toString();
-			let parent = $(link).parent();
+		let link = linksArray[i];
+		let isLinkEmpty = $(link).text().toString();
+		let parent = $(link).parent();
 
-			if(isLinkEmpty == ""){
-				$(parent).fadeOut();
-			}
-		}	
+		if(isLinkEmpty == ""){
+			$(parent).fadeOut();
+		}
+	}	
 } else {
 	$(allEvents).fadeIn();
 };
