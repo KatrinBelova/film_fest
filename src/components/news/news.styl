@@ -7,9 +7,11 @@
 		display flex
 		justify-content space-between
 		// display block
-	// &__item
-	// 	padding-left 10px
-	// 	padding-right 10px
+	&__item
+		// display block
+		// max-width 255px
+		// padding-left 10px
+		// padding-right 10px
 	&__wrap
 		max-width 255px
 		background-color #1e1e1e
@@ -28,13 +30,14 @@
 		padding 20px 35px 0 15px
 		font 400 0.875rem Lato
 		line-height 1.5rem
-	&__button
+	&__button.button
 		display none
 		
 @media screen and (max-width: 1200px)
 	.news
-		&__wrap
-			max-width 220px
+		&__item
+			padding-left 10px
+			padding-right 10px
 		&__date
 			font-size 1rem
 		&__title
@@ -44,7 +47,7 @@
 			padding-top 15px
 			font-size 0.85rem
 			line-height 1.3rem
-		
+					
 @media screen and (max-width: 992px)
 	.news
 		margin-top 50px
@@ -59,9 +62,7 @@
 			margin-top 10px
 		&__item
 			margin-top 20px
-
-			&:not(:nth-child(-n+3))
-				display none
+			// display none
 		&__date
 			font 400 1.25rem ptSans
 		&__title
@@ -74,7 +75,7 @@
 			padding 20px 35px 0 15px
 			font 400 1rem Lato
 			line-height 1.5rem
-		&__button
+		&__button.button
 			margin auto
 			margin-top 20px
 			
