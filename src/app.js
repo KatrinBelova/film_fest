@@ -1,6 +1,7 @@
 const $ = window.$ = window.jQuery = require('jquery');
 
 import 'slick-carousel';
+import 'svgxuse/svgxuse.js';
 
 import './components/header/header';
 import './components/news/news';

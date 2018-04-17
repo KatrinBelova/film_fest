@@ -20,14 +20,13 @@
 	&__header.program__header_pavilion
 		padding-left 200px
 	&__event
-		height 90px
+		display flex
+		min-height 90px
 		vertical-align center
 	p
 		font 700 1.25rem ptSans
 		color red
 		text-transform uppercase
-	&__event
-		display flex
 	&__time
 		font 700 2.5rem ptSans
 		color red
@@ -59,8 +58,14 @@
 
 @media screen and (max-width: 768px)
 	.program
-		padding-left 20px
 		margin-top 50px
+		&__table
+			padding-left 20px
+			padding-right 5px
 		&__button
 			margin-top 0
+		&__event
+			min-height 85px
+			margin-bottom 5px
+
 
