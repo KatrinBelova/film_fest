@@ -37,7 +37,7 @@ let $fourth = active[3];
 
 if($(items).length > 4) {
 
-	$($first).css('opacity','0.5');
+	// $($first).css('opacity','0.5');
 	$($fourth).css('opacity','0.5');
 };
 
