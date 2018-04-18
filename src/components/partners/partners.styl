@@ -4,24 +4,40 @@
 		margin-top 60px
 	&__org
 		width 25%
+		padding-top 60px
+		padding-bottom 60px
 		background-color #1e1e1e
+	&__filmgroup
+		margin-bottom 60px
 	&__filmgroup,
 	&__ufw
 		svg
 			width 193px
 			height 112px
 	&__brands
+		display flex
 		width 75%
 		padding 30px 20px
 		background-color #ebf0f1
+	&__list
+		width 100%
 	&__item
 		margin 0 24px
 		img
-			width 140px
-			height 108px
+			width 210px
+			height 162px
 
+@media screen and (max-width: 1200px)
+	.partners
+		&__item
+			img
+				width 170px
+				height 122px
+				
 @media screen and (max-width: 992px)
 	.partners
+		&__filmgroup
+			margin-bottom 0
 		&__org,
 		&__brands
 			width 100%
@@ -44,6 +60,3 @@
 			padding 0
 		&__item
 			margin 0 10px
-			img
-				width 120px
-				height 88px
