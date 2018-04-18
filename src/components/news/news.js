@@ -17,6 +17,7 @@ function slickify() {
 
 if ($(items).length > 4) {
 	slickify();
+	$('.slick-prev').hide()
 	
 	$(window).resize(function() {
 		if ($(window).width() > 992) {
@@ -57,6 +58,8 @@ $('.slick-prev').on('click', function() {
 });
 
 $('.slick-next').on('click', function() {
+	$('.slick-prev').show();
+	
 	slickTrack = $('.slick-track');
 	active = $('.slick-active');
 
@@ -85,12 +88,12 @@ let buttonLoadMore = $('.news__button.button');
 
 			$(items).hide();
 
-			$(items).slice(0,3).show();
+			$(items).slice(0,4).show();
 			$(buttonLoadMore).on('click', function(e){
 
 
 				e.preventDefault();
-				$('.news__item:hidden').slice(0,lastItem).slideDown("linear");
+				$('.news__item:hidden').slice(0,4).slideDown("linear");
 
 				if ($('.news__item:hidden').length == 0) {
 

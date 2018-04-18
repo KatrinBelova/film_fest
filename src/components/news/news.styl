@@ -6,12 +6,6 @@
 	&__list
 		display flex
 		justify-content space-between
-		// display block
-	&__item
-		// display block
-		// max-width 255px
-		// padding-left 10px
-		// padding-right 10px
 	&__wrap
 		max-width 255px
 		background-color #1e1e1e
@@ -62,6 +56,8 @@
 			margin-top 10px
 		&__item
 			margin-top 20px
+			padding-left 0
+			padding-right 0
 			// display none
 		&__date
 			font 400 1.25rem ptSans
@@ -85,3 +81,13 @@
 			min-height 106px
 		&__list
 			justify-content space-around
+		// &__wrap
+			// max-width 100%
+			
+@media screen and (max-width: 480px)
+	.news
+		&__item
+			padding-left 0
+			padding-right 0
+		&__wrap
+			max-width 100%

@@ -1,13 +1,7 @@
 .nominees
 	margin-top 100px
-	&__list
-		display flex
-		flex-wrap wrap
-		justify-content space-between
-		margin-top 30px
 	&__item
-		width 350px
-		height 350px
+		width 100%
 		margin-top 30px
 		overflow hidden
 	&__link
@@ -42,34 +36,13 @@
 	p
 		color #000
 		font 400 1.125rem ptSans
-		
-@media screen and (max-width: 1200px)
-	.nominees
-		&__list
-			justify-content space-around
-		&__item
-			width 365px
-			height 365px
-			margin-right 40px
-			margin-left 40px
-			
 
 @media screen and (max-width: 992px)
 	.nominees
 		margin-top 45px
-		&__list
-			margin-top 10px
-		
-@media screen and (max-width: 768px)
-	.nominees
-		&__item
-			margin-right 0
-			margin-left 0
-
+			
 @media screen and (max-width: 480px)
 	.nominees
 		&__item
-			max-width 270px
-			max-height 270px
 			span 
 				margin-top 22px
